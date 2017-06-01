@@ -1,0 +1,464 @@
+/*Allgemeine Styles */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #EDEDED;
+    font-size: 110%;  
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    padding-top: 0.1em;
+    font-family: Lobster;
+    line-height: 0em;
+    font-size: 35pt;
+    color: #373737;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/*Überschrift */
+
+header{ 
+    margin-bottom: -1.375em;
+    background: #65A795;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    padding-top: 0.5em;
+    padding-bottom: 0.7em;
+} 
+
+header a{
+    text-decoration: none;
+}
+
+header h3{
+    font-family: Lobster;
+    line-height: 0.6em;
+    color: #373737;
+    padding-bottom: 0.3em;
+    
+}
+
+
+/* Slideshow Bilder */
+
+#slideshow-background{
+    margin: 0px;
+    padding-top: 15px;
+    display: block;
+    background: #444444;    
+    border-bottom: 1px solid #353535;
+    border-top : 1px solid #353535;
+}  
+
+#slideshow-content{
+    text-align: center;
+} 
+
+#slider {
+    display: inline-block;
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}   
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: auto;
+}
+
+#prevslide, #nextslide{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 140px;   
+}
+
+#prevslide{
+    margin-right: 10px;
+}
+
+#nextslide{
+    margin-left: 10px;
+}
+
+
+/* Blog/Galerie Switcher */
+
+
+#switcher{
+    margin-top: -1em;
+    display: block;
+    background: #474747;
+}
+
+#switcher ul{
+    text-align: center;
+    padding-top: 0.483em;
+    padding-bottom: 0.483em;
+    border-bottom: 1px solid #808080;
+}
+
+#switcher ul li{
+    display: inline-block;
+    background: #65A795;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#switcher ul li:hover{
+    border: 1px solid #456D64;
+}
+
+#switcher ul li a{
+    line-height: 1.8em;
+    font-size: 25pt;
+    font-family: Quicksand;
+    font-weight: 900;
+    text-decoration: none;
+    color: #282828;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#blog{
+    border-right: 0px solid #808080;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#galerie{
+    border-left: 0px solid #808080;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+
+/* Hauptbereich mit neustem Blogartikel */
+
+#main{
+    width: 96%;
+    max-width: 960px;
+    display: block;
+    margin-top: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main article{
+    background: #585858;
+    color: #D5D5D5;
+    vertical-align: top;
+    text-align: left;
+    padding: 1.8em;
+    margin-bottom: 2em;
+    border: 1px solid #474747;
+    border-bottom: 4px solid #65A795;
+    border-radius: 5px;
+}
+
+#main article h3{
+    font-family: Quicksand;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 100;
+    font-size: 20pt;
+}
+
+#main article p{
+    font-size: 13pt;
+    line-height: 1.25em;
+    font-family: helvetica;
+}
+
+
+#main article img{
+    width: 60%;
+    height: auto;
+    float: right;
+    border-radius: 5px;
+    border: 1px solid #424242;
+}
+
+
+#art2 img{
+    float: left;
+}
+
+#footer{
+    display: block; 
+    height: 35px;
+    background: #65A795;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+#footer ul{
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding-top: 8px;
+}
+
+#footer ul li a{
+    color: #373737;
+    text-decoration: none;
+    font-family: Quicksand;
+}
+
+#footer ul li a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:1200px){
+    #switcher ul li a{
+        padding-left: 6em ;
+        padding-right: 6em;
+        line-height: 2em;
+        font-size: 18pt;
+    }
+    
+    #prevslide, #nextslide{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 150px;
+    }
+    
+}
+
+@media screen and (max-width:1000px){
+    #switcher ul li a{
+        padding-left: 5em ;
+        padding-right: 5em;
+        line-height: 2em;
+        font-size: 18pt;
+    }
+    
+    #prevslide, #nextslide{
+        display: none;
+    }
+    
+    
+    #slider {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 20px;
+    } 
+    
+    #slider .slide{
+        width: 770px;
+        height: 450px;
+    } 
+}
+
+@media screen and (max-width:800px){
+    #slider {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #slider .slides {
+        width: 6000px;
+        height: 400px;
+    }
+
+    #slider .slide {
+        width: 710px;
+        height: 350px;
+    }   
+     
+}
+
+@media screen and (max-width:768px){  
+ 
+   #slider {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #slider .slides {
+        width: 6000px;
+        height: 400px;
+    }
+
+    #slider .slide {
+        width: 710px;
+        height: 350px;
+    }
+    
+    #switcher ul li a{
+        padding-left: 5em ;
+        padding-right: 5em;
+        line-height: 2em;
+        font-size: 18pt;
+    }
+}
+
+@media screen and (max-width:700px){
+    #switcher ul li a{
+        padding-left: 3em ;
+        padding-right: 3em;
+        line-height: 2em;
+        font-size: 18pt;
+    }    
+    
+    #slider {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #slider .slides {
+        width: 6000px;
+        height: 350px;
+    }
+
+    #slider .slide {
+        width: 640px;
+        height: 350px;
+    }
+    
+    
+}
+
+/*Handy Anpassungen*/
+@media screen and (max-width:550px){
+    body{
+        font-size: 80%;
+    }
+    
+    h1{
+        font-size: 20pt;
+    }
+    
+    #slider{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+     #slider .slides {
+        width: 6000px;
+        height: 200px;
+    }
+
+    #slider .slide {
+        width: 350px;
+        height: 200px;
+    }
+
+    
+    #switcher{
+        display: block;
+        margin-bottom: -1em;
+    }
+    
+    #switcher ul {
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    
+    #switcher ul li{
+        margin: 0em;
+    }
+    
+    #switcher ul li a{
+        padding-left: 2.2em ;
+        padding-right: 2.2em;
+        line-height: 1.8em;
+        font-size: 18pt;
+    }
+    
+    #blog{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius:7px ;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    
+    #galerie{
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius:7px ;
+    }
+    
+    #main article p{
+        line-height: 1.2em;
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width:414px){
+    #slider .slides {
+        width: 6000px;
+        height: 220px;
+    }
+
+    
+    #slider .slide {
+        width: 410px;
+        height: 220px;
+    }
+}
+
+
+@media screen and (max-width:384px){
+    #slider .slides {
+        width: 6000px;
+        height: 200px;
+    }
+
+    #slider .slide {
+        width: 375px;
+        height: 200px;
+    }
+    
+    #switcher ul li a{
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+    }    
+}
